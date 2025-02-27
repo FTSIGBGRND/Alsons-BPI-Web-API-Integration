@@ -1,0 +1,33 @@
+                                                      SAP Business One Integration Error Log
+10:48:10.5401853          Connected to BPICTR_INTEG_UAT - Company Database.
+10:50:52.8440880          Connected to BPICTR_INTEG_UAT - Company Database.
+10:53:19.2145319          Connected to BPICTR_INTEG_UAT - Company Database.
+10:55:49.2596539          Connected to BPICTR_INTEG_UAT - Company Database.
+10:59:55.4626566          Connected to BPICTR_INTEG_UAT - Company Database.
+11:02:41.2884182          Connected to BPICTR_INTEG_UAT - Company Database.
+11:05:21.1578826          Connected to BPICTR_INTEG_UAT - Company Database.
+11:08:57.1281312          Connected to BPICTR_INTEG_UAT - Company Database.
+11:15:33.7742864          Connected to BPICTR_INTEG_UAT - Company Database.
+11:24:54.8468786          Connected to BPICTR_INTEG_UAT - Company Database.
+11:26:38.6617546          Connected to BPICTR_INTEG_UAT - Company Database.
+11:30:38.2149247          Connected to BPICTR_INTEG_UAT - Company Database.
+11:37:13.2585688          Connected to BPICTR_INTEG_UAT - Company Database.
+11:40:04.2462756          Connected to BPICTR_INTEG_UAT - Company Database.
+11:52:41.9177182          Connected to BPICTR_INTEG_UAT - Company Database.
+13:02:33.9465249          Connected to BPICTR_INTEG_UAT - Company Database.
+13:21:25.6893272          Connected to BPICTR_INTEG_UAT - Company Database.
+13:24:56.3468587          Connected to BPICTR_INTEG_UAT - Company Database.
+13:41:35.5154051          Connected to BPICTR_INTEG_UAT - Company Database.
+13:49:20.4126652          Connected to BPICTR_INTEG_UAT - Company Database.
+13:49:57.7421470          Connected to BPICTR_INTEG_UAT - Company Database.
+13:50:31.9378021          Connected to BPICTR_INTEG_UAT - Company Database.
+14:02:14.3345853          Connected to BPICTR_INTEG_UAT - Company Database.
+15:05:23.4905816          Connected to BPICTR_INTEG_UAT - Company Database.
+15:18:06.2816861          Connected to BPICTR_INTEG_UAT - Company Database.
+15:47:23.4413374          Connected to BPICTR_INTEG_UAT - Company Database.
+15:50:35.4931882          Connected to BPICTR_INTEG_UAT - Company Database.
+15:50:52.1614386          Code goes here 2
+15:51:07.3132230          Code goes here 4
+15:52:21.6798024          Connected to BPICTR_INTEG_UAT - Company Database.
+15:52:46.8374155          Code goes here 2
+16:57:55.6348393          Connected to BPICTR_INTEG_UAT - Company Database.

@@ -1,0 +1,15 @@
+                                                      SAP Business One Integration Error Log
+14:57:45.6074055          Connected to BPICTR_INTEG_UAT - Company Database.
+14:58:20.3174742          Connected to BPICTR_INTEG_UAT - Company Database.
+14:58:54.7566544          Connected to BPICTR_INTEG_UAT - Company Database.
+14:59:29.0515918          Connected to BPICTR_INTEG_UAT - Company Database.
+15:00:03.2595691          Connected to BPICTR_INTEG_UAT - Company Database.
+15:00:43.6165150          Connected to BPICTR_INTEG_UAT - Company Database.
+15:01:22.8623109          Connected to BPICTR_INTEG_UAT - Company Database.
+15:02:01.5992575          Connected to BPICTR_INTEG_UAT - Company Database.
+15:02:40.1306730          Connected to BPICTR_INTEG_UAT - Company Database.
+15:03:19.1549780          Connected to BPICTR_INTEG_UAT - Company Database.
+15:03:59.4837396          Connected to BPICTR_INTEG_UAT - Company Database.
+15:04:38.2279931          Connected to BPICTR_INTEG_UAT - Company Database.
+15:05:12.8434050          Connected to BPICTR_INTEG_UAT - Company Database.
+15:05:52.6589216          Connected to BPICTR_INTEG_UAT - Company Database.

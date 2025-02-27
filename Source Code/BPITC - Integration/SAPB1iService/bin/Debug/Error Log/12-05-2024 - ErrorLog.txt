@@ -1,0 +1,36 @@
+                                                      SAP Business One Integration Error Log
+09:15:26.9580210          Connected to BPICTR_INTEG_UAT - Company Database.
+09:16:28.2399249          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(13). Unable to connect to any of the specified MySQL hosts.
+09:16:30.5432322          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(14). Unable to connect to any of the specified MySQL hosts.
+09:16:32.8356680          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(203). Unable to connect to any of the specified MySQL hosts.
+09:16:35.1404493          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(18). Unable to connect to any of the specified MySQL hosts.
+09:16:37.4323779          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(19). Unable to connect to any of the specified MySQL hosts.
+09:16:39.7368561          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(24). Unable to connect to any of the specified MySQL hosts.
+09:16:42.0424436          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(2). Unable to connect to any of the specified MySQL hosts.
+09:16:44.3360000          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA('4'). Unable to connect to any of the specified MySQL hosts.
+09:16:46.6034911          Error Processing Data - CALL FTSI_IMPORT_GET_PROCESS_DATA(310). Unable to connect to any of the specified MySQL hosts.
+09:17:02.0216004          Integration Setup is missing. Please Check FTSI SAP Business One Integration Service Setup.
+14:21:32.3051981          Connected to BPICTR_INTEG_UAT - Company Database.
+14:25:20.7394144          Connected to BPICTR_INTEG_UAT - Company Database.
+14:27:32.2120190          Connected to BPICTR_INTEG_UAT - Company Database.
+14:30:40.3634194          Connected to BPICTR_INTEG_UAT - Company Database.
+14:33:36.6561063          Connected to BPICTR_INTEG_UAT - Company Database.
+14:38:47.4248030          Connected to BPICTR_INTEG_UAT - Company Database.
+14:45:40.8529523          Connected to BPICTR_INTEG_UAT - Company Database.
+14:49:43.4567179          Connected to BPICTR_INTEG_UAT - Company Database.
+14:51:15.7555708          Connected to BPICTR_INTEG_UAT - Company Database.
+14:52:11.0306490          Connected to BPICTR_INTEG_UAT - Company Database.
+14:53:36.8852418          Connected to BPICTR_INTEG_UAT - Company Database.
+15:06:50.9336537          Connected to BPICTR_INTEG_UAT - Company Database.
+15:19:33.2458732          Connected to BPICTR_INTEG_UAT - Company Database.
+16:25:11.8226364          Connected to BPICTR_INTEG_UAT - Company Database.
+16:58:34.5958123          Connected to BPICTR_INTEG_UAT - Company Database.
+17:01:10.6995205          Connected to BPICTR_INTEG_UAT - Company Database.
+17:15:40.3304785          Connected to BPICTR_INTEG_UAT - Company Database.
+17:22:35.6401658          Connected to BPICTR_INTEG_UAT - Company Database.
+17:23:18.9759929          Connected to BPICTR_INTEG_UAT - Company Database.
+17:24:10.9167138          Connected to BPICTR_INTEG_UAT - Company Database.
+17:24:49.0956269          Connected to BPICTR_INTEG_UAT - Company Database.
+17:25:25.1649688          Connected to BPICTR_INTEG_UAT - Company Database.
+17:26:02.0409941          Connected to BPICTR_INTEG_UAT - Company Database.
+17:26:38.0609191          Connected to BPICTR_INTEG_UAT - Company Database.
