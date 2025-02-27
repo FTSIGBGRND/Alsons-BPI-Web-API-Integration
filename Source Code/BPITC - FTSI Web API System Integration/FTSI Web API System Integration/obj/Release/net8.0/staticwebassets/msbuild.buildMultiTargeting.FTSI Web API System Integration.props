@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FTSI Web API System Integration.props" />
+</Project>

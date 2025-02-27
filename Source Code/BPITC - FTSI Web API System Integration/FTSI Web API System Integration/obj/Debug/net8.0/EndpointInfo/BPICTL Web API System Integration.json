@@ -1,0 +1,4644 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "BPICTL Web API System Integration",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/documents/apdebitmemo/item": {
+      "post": {
+        "tags": [
+          "APDebitMemo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APDebitMemoItemHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APDebitMemoItemHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/APDebitMemoItemHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/apdebitmemo/service": {
+      "post": {
+        "tags": [
+          "APDebitMemo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APDebitMemoServiceHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APDebitMemoServiceHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/APDebitMemoServiceHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/apdebitmemo/status/{id}": {
+      "get": {
+        "tags": [
+          "APDebitMemo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/apdebitmemo/cancel/{id}": {
+      "post": {
+        "tags": [
+          "APDebitMemo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/apinvoice/item": {
+      "post": {
+        "tags": [
+          "APInvoice"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APInvoiceItemHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APInvoiceItemHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/APInvoiceItemHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/apinvoice/service": {
+      "post": {
+        "tags": [
+          "APInvoice"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APInvoiceServiceHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/APInvoiceServiceHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/APInvoiceServiceHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/apinvoice/status/{id}": {
+      "get": {
+        "tags": [
+          "APInvoice"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arcreditmemo/item": {
+      "post": {
+        "tags": [
+          "ARCreditMemo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARCreditMemoItemHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARCreditMemoItemHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARCreditMemoItemHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arcreditmemo/service": {
+      "post": {
+        "tags": [
+          "ARCreditMemo"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARCreditMemoServiceHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARCreditMemoServiceHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARCreditMemoServiceHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arcreditmemo/status/{id}": {
+      "get": {
+        "tags": [
+          "ARCreditMemo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arcreditmemo/cancel/{id}": {
+      "post": {
+        "tags": [
+          "ARCreditMemo"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/ardownpayment": {
+      "post": {
+        "tags": [
+          "ARDownpayment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARDownpaymentHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARDownpaymentHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARDownpaymentHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/ardownpayment/status/{id}": {
+      "get": {
+        "tags": [
+          "ARDownpayment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arinvoice/item": {
+      "post": {
+        "tags": [
+          "ARInvoice"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARInvoiceItemHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARInvoiceItemHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARInvoiceItemHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arinvoice/service": {
+      "post": {
+        "tags": [
+          "ARInvoice"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARInvoiceServiceHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARInvoiceServiceHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ARInvoiceServiceHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/documents/arinvoice/status/{id}": {
+      "get": {
+        "tags": [
+          "ARInvoice"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/business-partner": {
+      "post": {
+        "tags": [
+          "BusinessPartner"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessPartnerHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessPartnerHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/BusinessPartnerHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/business-partner/status/{id}": {
+      "get": {
+        "tags": [
+          "BusinessPartner"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fixed-asset": {
+      "post": {
+        "tags": [
+          "Capitalization"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFixedAssetDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFixedAssetDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddFixedAssetDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/fixed-asset/status/{id}": {
+      "get": {
+        "tags": [
+          "Capitalization"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/payments/incoming": {
+      "post": {
+        "tags": [
+          "IncomingPayment"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IncomingPaymentHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/IncomingPaymentHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/IncomingPaymentHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/payments/incoming/status/{id}": {
+      "get": {
+        "tags": [
+          "IncomingPayment"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Item/item": {
+      "post": {
+        "tags": [
+          "Item"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Item/asset": {
+      "post": {
+        "tags": [
+          "Item"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddItemDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/journal-entry": {
+      "post": {
+        "tags": [
+          "JournalEntry"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddJournalEntryDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddJournalEntryDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddJournalEntryDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/journal-entry/status/{id}": {
+      "get": {
+        "tags": [
+          "JournalEntry"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/retirement": {
+      "post": {
+        "tags": [
+          "Retirement"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRetirementHeaderDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRetirementHeaderDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddRetirementHeaderDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/retirement/status/{id}": {
+      "get": {
+        "tags": [
+          "Retirement"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/GetResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "APDebitMemoItemHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "docType",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docType": {
+            "pattern": "^(S|I)$",
+            "type": "string",
+            "default": "I"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/APDebitMemoItemLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/APDebitMemoWTaxDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APDebitMemoItemLinesDTO": {
+        "required": [
+          "itemCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APDebitMemoServiceHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/APDebitMemoServiceLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/APDebitMemoWTaxDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APDebitMemoServiceLinesDTO": {
+        "required": [
+          "accountCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APDebitMemoWTaxDTO": {
+        "type": "object",
+        "properties": {
+          "wtCode": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "taxbleAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wtAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APInvoiceItemHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/APInvoiceItemLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "$ref": "#/components/schemas/APInvoiceWTaxDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "APInvoiceItemLinesDTO": {
+        "required": [
+          "itemCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APInvoiceServiceHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/APInvoiceServiceLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "$ref": "#/components/schemas/APInvoiceWTaxDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "APInvoiceServiceLinesDTO": {
+        "required": [
+          "accountCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "APInvoiceWTaxDTO": {
+        "type": "object",
+        "properties": {
+          "wtCode": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "taxbleAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wtAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARCreditMemoItemHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "docType",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docType": {
+            "pattern": "^(S|I)$",
+            "type": "string",
+            "default": "I"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARCreditMemoItemLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARCreditMemoWTaxDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARCreditMemoItemLinesDTO": {
+        "required": [
+          "itemCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARCreditMemoServiceHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARCreditMemoServiceLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARCreditMemoWTaxDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARCreditMemoServiceLinesDTO": {
+        "required": [
+          "accountCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARCreditMemoWTaxDTO": {
+        "type": "object",
+        "properties": {
+          "wtCode": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "taxbleAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wtAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARDownpaymentHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "docType",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docType": {
+            "pattern": "^(S|I)$",
+            "type": "string",
+            "default": "I"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "canceled": {
+            "pattern": "^(Y|N)$",
+            "type": "string",
+            "default": "N"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARDownpaymentLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "$ref": "#/components/schemas/ARDownpaymentWTaxDTO"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARDownpaymentLinesDTO": {
+        "required": [
+          "accountCode",
+          "itemCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARDownpaymentWTaxDTO": {
+        "type": "object",
+        "properties": {
+          "wtCode": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "taxbleAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wtAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARInvoiceDownpaymentDTO": {
+        "required": [
+          "drawnSum",
+          "lineNum",
+          "u_DPRefNum",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "drawnSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_DPRefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARInvoiceItemHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARInvoiceItemLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "$ref": "#/components/schemas/ARInvoiceWTaxDTO"
+          },
+          "documentDownPayments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARInvoiceDownpaymentDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARInvoiceItemLinesDTO": {
+        "required": [
+          "itemCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARInvoiceServiceHeaderDTO": {
+        "required": [
+          "cardCode",
+          "comments",
+          "docDate",
+          "docDueDate",
+          "documentLines",
+          "jrnlMemo",
+          "numAtCard",
+          "taxDate",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "numAtCard": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDueDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "taxDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "jrnlMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "comments": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "posted": {
+            "pattern": "^(N)$",
+            "type": "string"
+          },
+          "documentLines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARInvoiceServiceLinesDTO"
+            }
+          },
+          "documentWTax": {
+            "$ref": "#/components/schemas/ARInvoiceWTaxDTO"
+          },
+          "documentDownPayments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ARInvoiceDownpaymentDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARInvoiceServiceLinesDTO": {
+        "required": [
+          "accountCode",
+          "lineNum",
+          "priceAfVAT",
+          "vatGroup"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_BaseType": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "u_BaseRef": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BaseLine": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "description": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "accountCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "discPrcnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "vatGroup": {
+            "maxLength": 4,
+            "minLength": 1,
+            "type": "string"
+          },
+          "priceAfVAT": {
+            "type": "number",
+            "format": "double"
+          },
+          "wtLiable": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "ocrCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LongDscrptn": {
+            "type": "string",
+            "nullable": true
+          },
+          "u_Period": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ARInvoiceWTaxDTO": {
+        "type": "object",
+        "properties": {
+          "wtCode": {
+            "maxLength": 4,
+            "type": "string",
+            "nullable": true
+          },
+          "taxbleAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "wtAmnt": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddFixedAssetDTO": {
+        "required": [
+          "dprStart",
+          "itemCode",
+          "itemName",
+          "quantity",
+          "u_RefNum",
+          "usefulLife"
+        ],
+        "type": "object",
+        "properties": {
+          "asstStatus": {
+            "type": "string",
+            "default": "N"
+          },
+          "assetClass": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "itemName": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_SalesAg": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssetAcct": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "quantity": {
+            "type": "number",
+            "format": "double"
+          },
+          "u_Maker": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Model": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "u_ModYear": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Serial": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_GDate": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Chasis": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Engine": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Color": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_EquipID": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LMADate": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_NMADate": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssInfo1": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssInfo2": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssInfo3": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssLoc": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssLocM": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssRes": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Contract": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "lineTotal": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "postDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "dprStart": {
+            "type": "string",
+            "format": "date"
+          },
+          "usefulLife": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddItemDTO": {
+        "required": [
+          "itemCode",
+          "itemName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "itemName": {
+            "maxLength": 200,
+            "minLength": 1,
+            "type": "string"
+          },
+          "asstStatus": {
+            "pattern": "^(N|A|I)$",
+            "type": "string",
+            "default": "N"
+          },
+          "itemType": {
+            "pattern": "^(I|L|T|F)$",
+            "type": "string",
+            "default": "I"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_SalesAg": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssetAcct": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Maker": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Model": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "u_ModYear": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Serial": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "u_GDate": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Chasis": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Engine": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Color": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_EquipID": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LMADate": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_NMADate": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssInfo1": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssInfo2": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssInfo3": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssLoc": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssLocM": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssRes": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Contract": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddJournalEntryDTO": {
+        "required": [
+          "lines",
+          "refDate",
+          "u_DocNum",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "u_DocNum": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "refDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "memo": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lines": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddJournalEntryLinesDTO"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddJournalEntryLinesDTO": {
+        "required": [
+          "account",
+          "cardType",
+          "credit",
+          "debit",
+          "fcCurrency",
+          "groupNum",
+          "lineMemo",
+          "shortName",
+          "u_DocNum",
+          "u_InvDate",
+          "u_InvNum",
+          "u_TaxAmt",
+          "u_TaxableAmt",
+          "u_TransType",
+          "u_VatBase"
+        ],
+        "type": "object",
+        "properties": {
+          "shortName": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "account": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_DocNum": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "lineMemo": {
+            "maxLength": 254,
+            "minLength": 1,
+            "type": "string"
+          },
+          "debit": {
+            "type": "number",
+            "format": "double"
+          },
+          "credit": {
+            "type": "number",
+            "format": "double"
+          },
+          "fcCurrency": {
+            "maxLength": 3,
+            "minLength": 1,
+            "type": "string"
+          },
+          "profitCode": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode2": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode3": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode4": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "ocrCode5": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "u_InvDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "u_InvNum": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_VatBase": {
+            "type": "number",
+            "format": "double"
+          },
+          "u_TransType": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_xWTCode": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "u_xWTVendor": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_xSupplierName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "u_xCardTyp": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Address": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "u_TIN": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_TIN1": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_TIN2": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_TaxAmt": {
+            "type": "number",
+            "format": "double"
+          },
+          "u_TaxableAmt": {
+            "type": "number",
+            "format": "double"
+          },
+          "u_SrceDocNo": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_ORNo": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_SOA": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CheckNo": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CheckDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "u_APVNo": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_VSIRefNo": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Contract": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "cardType": {
+            "type": "string",
+            "default": "C"
+          },
+          "groupNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "wtLiable": {
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "e_mail": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "phone1": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "cntctPrsn": {
+            "maxLength": 90,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddRetirementHeaderDTO": {
+        "required": [
+          "assetDate",
+          "docDate",
+          "docType",
+          "postDate"
+        ],
+        "type": "object",
+        "properties": {
+          "docType": {
+            "maxLength": 15,
+            "minLength": 1,
+            "pattern": "^(NC|SC)$",
+            "type": "string",
+            "default": "NC"
+          },
+          "postDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "assetDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "comments": {
+            "maxLength": 254,
+            "type": "string",
+            "nullable": true
+          },
+          "docStatus": {
+            "pattern": "^(P|C)$",
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "type": "string",
+            "nullable": true
+          },
+          "details": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddRetirementLinesDTO"
+            },
+            "nullable": true
+          },
+          "journalTransactions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AddRetirementJournalDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddRetirementJournalDTO": {
+        "required": [
+          "dprArea"
+        ],
+        "type": "object",
+        "properties": {
+          "dprArea": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AddRetirementLinesDTO": {
+        "required": [
+          "itemCode",
+          "lineNum"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "itemCode": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "partial": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N",
+            "nullable": true
+          },
+          "apc": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BPAddressDTO": {
+        "required": [
+          "address",
+          "adresType"
+        ],
+        "type": "object",
+        "properties": {
+          "address": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "country": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "zipCode": {
+            "maxLength": 20,
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "maxLength": 3,
+            "type": "string",
+            "nullable": true
+          },
+          "street": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "block": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "adresType": {
+            "pattern": "^(S|B)$",
+            "type": "string",
+            "default": "S"
+          },
+          "u_BranchID": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BranchName": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LngAddrs1": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_LngAddrs2": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "BusinessPartnerHeaderDTO": {
+        "required": [
+          "cardCode",
+          "cardName"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardFName": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "cardType": {
+            "pattern": "^(C|S|L)$",
+            "type": "string",
+            "default": "C"
+          },
+          "groupCode": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cmpPrivate": {
+            "pattern": "^(C|I|G|E)$",
+            "type": "string",
+            "default": "C"
+          },
+          "validFor": {
+            "type": "string",
+            "default": "Y"
+          },
+          "ecVatGroup": {
+            "maxLength": 8,
+            "type": "string",
+            "nullable": true
+          },
+          "addId": {
+            "maxLength": 64,
+            "type": "string",
+            "nullable": true
+          },
+          "industryC": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "validComm": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "licTradNum": {
+            "maxLength": 32,
+            "type": "string",
+            "nullable": true
+          },
+          "dflAccount": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "groupNum": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dflBranch": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CstmNmSrch": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CstmrCtgry": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CstmrCdHQ": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CutmrNtr": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_PsicPsoc": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CrdtRtng": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CrdRtUp": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CrdtRtDtl": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CrdtCtgry": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_VndrPrgrm": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_GrgCtgry": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_EqtyRt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_OpePrd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_ExpsrLmt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_IDCrdAdd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_MrtlStatus": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Emplymnt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_PrtsCmpyCd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_PrtsCmpyNm": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_OrgnlGrpCd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_OrgnlGrpNm": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_InvRtio": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_IntrdcrCd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_IntrdcrNm": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_GrntrCd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AssetSize": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_TcCRR": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_PostCode": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_PrfssnType": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Privies": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_FsclMnth": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RgstrdCptl": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_EsblsmntDt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_MngmntYrs": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_HeadCount": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Credibility": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RiskConcern": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CstmerVst": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_WhtRcvd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_SlsPicFl": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_SlsPicOI": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_SlsMngr9": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_SlsMngr10": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CrdtAnlyst": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_HoldingCR": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_InCbnt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BzLink": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_DueDate": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_InvDvncDt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_InvoicePIC": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_IBllngPic": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_SndngMthd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_DescriptionPtn": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_ReceiptDsp": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BranchID": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_BranchName": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_OffclCtgry": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_GrntLttrDt": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_AgrAcvtyCd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_EcAcvtyCd": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_InvPrntPtrn": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_CreditTerm": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          },
+          "addresses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/BPAddressDTO"
+            },
+            "nullable": true
+          },
+          "contactEmployees": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ContactEmployeeDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ContactEmployeeDTO": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "firstName": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "position": {
+            "maxLength": 90,
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "profession": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "tel1": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "fax": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "notes1": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "notes2": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "gender": {
+            "pattern": "^(M|F|E|X)$",
+            "type": "string",
+            "default": "E"
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "u_NameLocal": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_Email3": {
+            "maxLength": 255,
+            "type": "string",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/GetResponseData"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GetResponseData": {
+        "type": "object",
+        "properties": {
+          "integrationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "integrationMessage": {
+            "type": "string",
+            "nullable": true
+          },
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "IncomingPaymentHeaderDTO": {
+        "required": [
+          "canceled",
+          "cardCode",
+          "cardName",
+          "cashAccnt",
+          "cashSum",
+          "docDate",
+          "paymentInvoices",
+          "series",
+          "trsfrAcct",
+          "trsfrDate",
+          "trsfrSum",
+          "u_FileName",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "cardCode": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cardName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "docDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "cashAccnt": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cashSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "trsfrAcct": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "trsfrDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "trsfrRef": {
+            "maxLength": 15,
+            "type": "string",
+            "nullable": true
+          },
+          "trsfrSum": {
+            "type": "number",
+            "format": "double"
+          },
+          "canceled": {
+            "pattern": "^(N|Y)$",
+            "type": "string",
+            "default": "N"
+          },
+          "series": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          },
+          "u_FileName": {
+            "maxLength": 100,
+            "minLength": 1,
+            "type": "string"
+          },
+          "paymentInvoices": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/IncomingPaymentInvoicesDTO"
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "IncomingPaymentInvoicesDTO": {
+        "required": [
+          "invType",
+          "sumApplied",
+          "u_RefNum"
+        ],
+        "type": "object",
+        "properties": {
+          "lineNum": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "invType": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sumApplied": {
+            "type": "number",
+            "format": "double"
+          },
+          "u_RefNum": {
+            "maxLength": 30,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginModel": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostResponse": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "data": {
+            "$ref": "#/components/schemas/PostResponseData"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PostResponseData": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
+          },
+          "u_RefNum": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

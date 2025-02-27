@@ -1,0 +1,6 @@
+@FTSI_Web_API_System_Integration_HostAddress = http://localhost:5240
+
+GET {{FTSI_Web_API_System_Integration_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Fasttrack Files\Fasttrack Projects\BPITC-SAPB1-Integration\Source Code\BPITC - FTSI Web API System Integration\FTSI Web API System Integration\bin\Release\net8.0</_PublishTargetUrl>
+    <History>True|2025-02-24T06:08:33.3400013Z||;True|2025-01-17T11:42:55.1807583+08:00||;True|2024-11-13T19:09:30.8297082+08:00||;True|2024-11-05T16:07:03.3627019+08:00||;True|2024-10-16T08:35:14.1817068+08:00||;True|2024-10-14T11:27:10.1572487+08:00||;True|2024-10-14T10:44:08.8670524+08:00||;True|2024-10-09T10:35:35.2511019+08:00||;True|2024-10-09T10:09:56.8506295+08:00||;True|2024-10-09T09:52:53.0019129+08:00||;True|2024-10-04T17:47:29.3866423+08:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

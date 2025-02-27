@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FTSI Web API System Integration.props" />
+</Project>

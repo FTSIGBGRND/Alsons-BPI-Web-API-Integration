@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BPICTL Web API System Integration.props" />
+</Project>

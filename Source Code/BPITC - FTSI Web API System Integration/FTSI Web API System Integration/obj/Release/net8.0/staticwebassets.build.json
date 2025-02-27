@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "UAJR0QjBqj79csmDoYKMOWHpXwU4oTtdk/kvrEBqNMw=",
+  "Source": "BPICTL Web API System Integration",
+  "BasePath": "_content/BPICTL Web API System Integration",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
